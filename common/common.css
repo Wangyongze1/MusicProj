@@ -1,0 +1,12 @@
+.uni-bg-red {
+	background-color: red;
+}
+.uni-bg-green {
+	background-color: green;
+}
+.uni-bg-blue {
+	background-color: blue;
+}
+::-webkit-scrollbar {/*隐藏滚轮*/
+	display: none;
+}

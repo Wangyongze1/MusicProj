@@ -1,0 +1,190 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			// "navigationBarTitleText": "uni-ui基础项目"
+			"navigationBarBackgroundColor": "#ffffff",
+			// "navigationBarTitleText": "首页",
+			"navigationBarTextStyle": "black",//仅支持 black/white,
+			"navigationBarTitleText": "搜索结果",
+			        "app-plus": {  //app-plus 配置编译到 App 平台时的特定样式，部分常用配置 H5 平台也支持
+			          "titleNView": {
+						// "type": "transparent",
+			            "searchInput": {
+			              "backgroundColor": "#fafafa",
+			              "borderRadius": "18px", //输入框圆角
+			              "placeholder": "请输入搜索内容",
+						  "disabled": "true"
+			            }
+						// "buttons": [{  // 具体说明请继续往下看
+						//   "text": "",  // button字体图标
+						//   // "fontSrc": "/static/imgs/search.ttf",
+						//   "fontSize": "16px",
+						//   "float": "right"  // button位置, 可以选择在左边或者右边
+						// }]
+			          }
+			        }
+		}
+	},{
+		"path": "pages/video/video",
+		"style": {
+			// "navigationBarTitleText": "uni-ui基础项目"
+			"navigationBarBackgroundColor": "#ffffff",
+			// "navigationBarTitleText": "首页",
+			"navigationBarTextStyle": "black",//仅支持 black/white,
+			"navigationBarTitleText": "搜索结果",
+			        "app-plus": {  //app-plus 配置编译到 App 平台时的特定样式，部分常用配置 H5 平台也支持
+			          "titleNView": {
+						// "type": "transparent",
+			            "searchInput": {
+			              "backgroundColor": "#fafafa",
+			              "borderRadius": "18px", //输入框圆角
+			              "placeholder": "请输入搜索内容"
+			            }
+			          }
+			        }
+		}
+		
+	},{
+		"path": "pages/music/music",
+		"style": {
+			"enablePullDownRefresh": false,
+			"navigationBarTextStyle": "black",//仅支持 black/white,
+			"app-plus":{
+			"titleNView":false
+			}
+			
+		}
+	},{
+		"path": "pages/listDetails/listDetails",
+		"style": {
+			"navigationBarBackgroundColor": "#ffffff",
+			"navigationBarTextStyle": "black",//仅支持 black/white,
+			"navigationBarTitleText" : "歌单",
+			"app-plus": {  //app-plus 配置编译到 App 平台时的特定样式，部分常用配置 H5 平台也支持
+				"titleNView": {
+					// "buttons": [{  // 具体说明请继续往下看
+					//   "text": "\ue601",  // button字体图标
+					//   "fontSrc": "/static/imgs/search.ttf",
+					//   "fontSize": "22px",
+					//   "float": "right"  // button位置, 可以选择在左边或者右边
+					// }]
+				}
+				
+			}
+		}
+	},{
+		"path": "pages/playPage/playPage",
+		"style": {
+			"enablePullDownRefresh": false,
+			// "navigationStyle": "custom",
+			"navigationBarTextStyle": "black",//仅支持 black/white,
+			"navigationBarTitleText" : "歌名",
+			"navigationBarBackgroundColor": "black",
+			"disableScroll": true,
+			"app-plus": {  //app-plus 配置编译到 App 平台时的特定样式，部分常用配置 H5 平台也支持
+			  "titleNView": {
+				// "type": "transparent",
+			  }
+			  }
+		}
+	},{
+            "path" : "pages/search/search",
+            "style": {
+            	// "navigationBarTitleText": "uni-ui基础项目"
+            	"navigationBarBackgroundColor": "#ffffff",
+            	// "navigationBarTitleText": "首页",
+            	"navigationBarTextStyle": "black",//仅支持 black/white,
+            	"navigationBarTitleText": "搜索结果",
+            	        "app-plus": {  //app-plus 配置编译到 App 平台时的特定样式，部分常用配置 H5 平台也支持
+            	          "titleNView": {
+            				// "type": "transparent",
+            	            "searchInput": {
+            	              "backgroundColor": "#fafafa",
+            	              "borderRadius": "18px", //输入框圆角
+            	              "placeholder": "请输入搜索内容"
+            	            },
+            				"buttons": [{  // 具体说明请继续往下看
+            				  "text": "取消",  // button字体图标
+            				  "fontSize": "16px",
+            				  "float": "right"  // button位置, 可以选择在左边或者右边
+            				}]
+            	          }
+            	        }
+            }
+        },{
+            "path" : "pages/searchResult/searchResult",
+            "style": {
+				"enablePullDownRefresh": false,
+            	// "navigationBarTitleText": "uni-ui基础项目"
+            	"navigationBarBackgroundColor": "#ffffff",
+            	// "navigationBarTitleText": "首页",
+            	"navigationBarTextStyle": "black",//仅支持 black/white,
+            	        "app-plus": {  //app-plus 配置编译到 App 平台时的特定样式，部分常用配置 H5 平台也支持
+            	          "titleNView": {
+            				// "type": "transparent",
+            	            "searchInput": {
+            	              "backgroundColor": "#fafafa",
+            	              "borderRadius": "18px", //输入框圆角
+            	              "placeholder": "请输入搜索内容"
+							  // "disabled": "true"
+            	            }
+            	          }
+            	        }
+            }
+        }
+        
+    ],
+	"globalStyle": {
+		"enablePullDownRefresh": true,
+		"app-plus":{
+					"scrollIndicator":"none" //全局 在APP页面都不显示滚动条
+				}
+		// "navigationBarTextStyle": "white",
+		// "navigationBarTitleText": "uni-app",
+		// "navigationBarBackgroundColor": "#ffffff",
+		// "navigationBarTitleText": "首页",
+		// "navigationBarTextStyle": "black"//仅支持 black/white,
+		// "navigationStyle": "custom",
+		// "backgroundColor": "#FFFFFF"
+	},
+	"easycom": {
+	  "autoscan": true,
+	  "custom": {
+	    "uni-(.*)": "@/components/uni-$1/uni-$1.vue"
+	  }
+	},
+	"tabBar": {
+			"color": "#8a8a8a",//底部导航文字颜色
+			"selectedColor": "#C20C0C",
+			"borderStyle": "white",
+			"backgroundColor":"#fafafa",
+			"list": [{
+					"pagePath": "pages/index/index",//页面路由
+					"text": "发现",//显示文字
+					"iconPath": "/static/imgs/wyyLogo.png",//默认图标
+					"selectedIconPath": "/static/imgs/wyyLogo2.png"//选中图片
+				},{
+					"pagePath": "pages/video/video",//页面路由
+					"text": "视频",//显示文字
+					"iconPath": "/static/imgs/play2.png",//默认图标
+					"selectedIconPath": "/static/imgs/play.png"//选中图片
+				},{
+					"pagePath": "pages/music/music",//页面路由
+					"text": "我的",//显示文字
+					"iconPath": "/static/imgs/music.png",//默认图标
+					"selectedIconPath": "/static/imgs/music2.png"//选中图片
+				}
+			]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
